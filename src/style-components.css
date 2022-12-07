@@ -1,0 +1,626 @@
+/* navbar style */
+.navbar-container{
+    background-color: transparent;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+
+}
+
+.App.dark{
+    background-color: black;
+}
+
+.App-header{
+    background-image: url("/public/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.navbar-container.dark{
+    color: black;
+}
+
+.darkMode-switch{
+    display: flex;
+    font-size: large;
+}
+
+.darkMode-switch.dark{
+    color: black;
+}
+
+.button-change{
+    width:40px;
+    height: 20px;
+    background-color: grey;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.button-change .circle-left{
+    background-color: aliceblue;
+    border-radius: 50%;
+    width:20px;
+    height: 20px;
+}
+
+.button-change .circle-left.dark{
+    opacity: 0;
+}
+
+.button-change .circle-right{
+    background-color: black;;
+    border-radius: 50%;
+    width:20px;
+    height: 20px;
+}
+
+.button-change .circle-right.dark{
+    opacity: 0;
+}
+
+.title-container{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-pizza{
+    letter-spacing: 0.05px;
+    padding-left: 15px;
+    font-size: 40px;
+}
+
+.menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+    padding-top: 7px;
+}
+
+.menu-container.dark{
+    color: black;
+}
+
+.title-menu{
+    padding-right: 6px;
+    font-size: 20px;
+}
+.title-menu:hover{
+    cursor: pointer;
+}
+
+/* .menu-container img{
+    width:30px;
+    height: 30px;
+} */
+
+/* hero style */
+.hero-container{
+    margin-top: 150px;
+    margin-left: 70px;
+}
+
+
+.info-container{
+    color:white;
+    width: 420px;
+    box-shadow: 5px 5px 1px yellow;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.info-container.dark{
+    color: black;
+}
+
+.text-container{
+    color:white;
+    width: 420px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.text-container.dark{
+    color: black;
+}
+
+.button-place-order{
+    color:white;
+    background-color: red;
+    outline: none;
+    border:none;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: large;
+    font-family: Inter,Arial;
+    margin-bottom: 130px;
+    cursor: pointer;
+    border:2px solid rgb(185, 76, 76);
+}
+
+.button-place-order:hover{
+    background-color: rgb(240, 102, 102);
+}
+
+@media screen and (min-width:300px) and (max-width: 399px) {
+    .hero-container{
+        margin-top: 125px;
+        margin-left: 25px;
+    }
+    .info-container{
+        width: 125px;
+        font-size: 20px;
+    }
+    .darkMode-switch{
+        font-size: medium;
+    }
+    .text-container{
+        width: 125px;
+        font-size: 12px;
+    }
+    .button-place-order{
+        padding-top:5px;
+        padding-bottom: 5px;
+        padding-left: 7px;
+        padding-right: 7px;
+        font-size: 10px;
+    }
+    .title-pizza{
+        font-size: 25px;
+    }
+    .title-menu{
+        font-size: medium;
+    }
+    .menu-container img{
+        width:25px;
+        height: 25px;
+    }
+    .pizza-container{
+        width:190px;
+    }
+    /* .pizza-container .add-to-cart-pizza{
+        font-size: small;
+        background-color: aliceblue;
+    } */
+  }
+
+@media screen and (min-width:400px) and (max-width: 599px) {
+    .hero-container{
+        margin-top: 170px;
+        margin-left: 30px;
+    }
+    .info-container{
+        width: 165px;
+        font-size: 25px;
+    }
+    .darkMode-switch{
+        font-size: medium;
+    }
+    .title-pizza{
+        font-size: 30px;
+    }
+    .title-menu{
+        font-size: 18px;
+    }
+    .text-container{
+        width: 165px;
+        font-size: 15px;
+    }
+    .button-place-order{
+        padding-top:7px;
+        padding-bottom: 7px;
+        font-size: small;
+        margin-bottom: 40px;
+    }
+    .pizza-container{
+        width:220px;
+    }
+    
+    /* .pizza-container .add-to-cart-pizza{
+        font-size: small;
+        background-color: aliceblue;
+    } */
+  }
+
+  @media screen and (min-width:600px) and (max-width: 799px) {
+    .hero-container{
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+    .info-container{
+        width: 200px;
+        font-size: 35px;
+    }
+    .title-pizza{
+        font-size: 35px;
+    }
+    .text-container{
+        width: 200px;
+        font-size: 19px;
+    }
+    .button-place-order{
+        padding-top:7px;
+        padding-bottom: 7px;
+        font-size: medium;
+        margin-bottom: 70px;
+    }
+    .pizza-container{
+        width:250px;
+    }
+    /* .pizza-container.add-to-cart-pizza{
+        font-size: small;
+        font-family: Inter, Arial;
+        background-color: aliceblue;
+    } */
+  }
+
+  @media screen and (min-width:800px) and (max-width: 1000px) {
+    .hero-container{
+        margin-top: 130px;
+        margin-left: 80px;
+    }
+    .info-container{
+        width: 300px;
+        font-size: 40px;
+    }
+    .text-container{
+        width: 300px;
+        font-size: 28px;
+    }
+    .button-place-order{
+        padding-top:10px;
+        padding-bottom: 10px;
+        font-size: medium;
+        margin-bottom: 100px;
+    }
+    .pizza-container{
+        width:280px;
+    }
+  }
+
+/* choose favorite pizza style */
+.title-favorite{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.title-container.dark{
+    color:white;
+}
+
+.products-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.products-list.dark{
+    background-color: black;
+}
+
+.pizza-container{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 300px;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pizza-container.dark{
+    background-color: black;
+    color:white;
+}
+
+.pizza-container .pizza-image{
+    height: 200px;
+    max-width: 100%;
+    box-shadow: 5px 5px 1px yellow;
+}
+
+.pizza-container .pizza-name{
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight:500;
+    text-align: center;
+}
+
+.pizza-container .pizza-info{
+    max-width:100%; 
+    text-align: center;
+}
+
+.pizza-container .pizza-price{
+    font-weight:500;
+}
+
+.pizza-container .add-to-cart-pizza{
+    background-color: red;
+    border:2px solid rgb(185, 76, 76);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:white;
+    font-family: Inter, Arial;
+    font-size: medium;
+    cursor: pointer;
+    
+}
+
+.pizza-container .add-to-cart-pizza:hover{
+    background-color: rgb(240, 102, 102);
+}
+
+/* pizza of the day */
+.pizza-of-the-day-container{
+    background-image: url("/public/Proper-Pizza-Pasta-Taraneasca-02.jpg");
+    height: 100vh;
+    max-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza-of-the-day-container .title{
+    color: white;
+    font-size: 70px;
+    font-weight:900;
+}
+
+.pizza-of-the-day-container .ingredients{
+    color: white;
+    font-size: 30px;
+    font-weight:500;
+    text-align: center;
+    max-width: 700px;
+}
+
+.pizza-of-the-day-container .button-order{
+    background-color: yellow;
+    border:2px solid rgb(205, 200, 64);
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: large;
+    color:black;
+    font-family: Inter, Arial;
+    cursor: pointer;
+}
+
+.pizza-of-the-day-container .button-order:hover{
+    background-color: rgb(244, 244, 90);
+}
+
+@media screen and (min-width:300px) and (max-width: 399px) {
+    .title-favorite{
+        font-size: 25px;
+    }
+    .pizza-of-the-day-container{
+        max-height: 150px;
+    }
+    .pizza-container{
+        width:190px;
+    }
+    .pizza-container .pizza-image{
+        height: 120px;
+    }
+    .pizza-container .add-to-cart-pizza{
+        font-size: small;
+        padding: 5px 7px;
+    }
+    .pizza-of-the-day-container .title{
+        font-size: 15px;
+    }
+    .pizza-of-the-day-container .ingredients{
+        font-size: 12px;
+    }
+    .pizza-of-the-day-container .button-order{
+        font-size: small;
+        padding: 5px 7px;
+    }
+  }
+
+@media screen and (min-width:400px) and (max-width: 599px) {
+    .pizza-of-the-day-container{
+        max-height: 200px;
+    }
+    .pizza-container{
+        width:220px;
+    }
+    .pizza-container .pizza-image{
+        height: 150px;
+    }
+    .pizza-of-the-day-container .title{
+        font-size: 25px;
+    }
+    .pizza-of-the-day-container .ingredients{
+        font-size: 18px;
+    }
+    .pizza-of-the-day-container .button-order{
+        font-size: small;
+        padding: 7px 7px;
+    }
+  }
+
+  @media screen and (min-width:600px) and (max-width: 799px) {
+    .pizza-of-the-day-container{
+        max-height: 250px;
+    }
+    .pizza-container{
+        width:250px;
+    }
+    .pizza-of-the-day-container .title{
+        font-size: 35px;
+    }
+    .pizza-of-the-day-container .ingredients{
+        font-size: 23px;
+    }
+    .pizza-of-the-day-container .button-order{
+        font-size: medium;
+        padding: 7px 7px;
+    }
+  }
+
+  @media screen and (min-width:800px) and (max-width: 1000px) {
+    .pizza-of-the-day-container{
+        max-height: 350px;
+    }
+    .pizza-container{
+        width:280px;
+    }
+    .pizza-container .pizza-image{
+        height: 170px;
+    }
+    .pizza-of-the-day-container .title{
+        font-size: 40px;
+    }
+    .pizza-of-the-day-container .ingredients{
+        font-size: 28px;
+    }
+    .pizza-of-the-day-container .button-order{
+        font-size: medium;
+        padding: 10px 10px;
+    }
+  }
+
+  /* footer */
+  .footer-container{
+    height:40px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 2px 2px 1px black;
+  }
+
+  .footer-container.dark{
+    color:white;
+    box-shadow: inset 2px 2px 1px white;
+  }
+
+  .footer-container span{
+    flex:1;
+    font-size:x-large;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    text-shadow: 2px 2px 1px grey;
+  }
+
+  .footer-container i{
+    margin-right: 18px;
+  }
+
+  .icons-container{
+    margin-right: 60px;
+  }
+
+  /* siderbar */
+  .sidebar-container{
+    position:absolute;
+    background-color: yellow;
+    width:200px;
+    top:0;
+    right:0;
+    height: 100%;
+    width:30%;
+    z-index: 999;
+    /* opacity: 0; */
+    /* transition: 0.3s; */
+  }
+  /* .sidebar-container:hover{
+    opacity: 1;
+    transition: 0.3s;
+  } */
+
+  .sidebar-container.hidden{
+    opacity: 0;
+  }
+  .sidebar-container.view{
+    opacity: 1;
+  }
+
+  .sidebar-container .redirect-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .sidebar-container a{
+    text-decoration: none;
+    color:black;
+    font-family: Inter, Arial;
+    font-weight: 800;
+    font-size: x-large;
+    margin-bottom: 10px;
+  }
+
+  .sidebar-container .close-button{
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .sidebar-container .close-button span{
+    border:3px solid black;
+    border-radius: 50%;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right:12px;
+    top:30px;
+    font-family: Inter, Arial;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  @media screen and (min-width:300px) and (max-width: 399px) {
+    .sidebar-container a{
+        font-size: medium;
+    }
+  }
+
+@media screen and (min-width:400px) and (max-width: 599px) {
+    .sidebar-container a{
+        font-size: medium;
+    }
+  }
+
+  @media screen and (min-width:600px) and (max-width: 799px) {
+    .sidebar-container a{
+        font-size: large;
+    }
+  }
+
+  @media screen and (min-width:800px) and (max-width: 1000px) {
+    .sidebar-container a{
+        font-size: larger;
+    }
+  }
